@@ -51,3 +51,11 @@ table {
                     CSS Starts Here
 ******************************************************/
 
+@media screen and (max-width: 320px) {
+}
+
+@media screen and (max-width: 680px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
