@@ -51,31 +51,123 @@ table {
                     CSS Starts Here
 ******************************************************/
 
+body {
+	font-family:'Poppins', san-serif;
+}
+
+h1{
+    font-family: 'Poppins', san-serif;
+    font-size:3rem;
+    text-align:center;
+	font-weight:700;
+	line-height:2em;
+}
+
+h2{
+    font-family: 'Poppins', san-serif;
+    font-size:2rem;
+    text-align:center;
+	font-weight:600;
+	line-height:2em;
+}
+
+h3{
+    font-family:'Poppins', san-serif;
+    font-size:1rem;
+    font-weight:600;
+	text-align:center;
+	line-height:4em;
+}
+
+p{
+    font-family:'Poppins';
+    line-height:20;
+}
+
+
 .header {
-    background-color:#FFFFFF;
-    width:100%;
+	display: grid; 
+	overflow: hidden;
+	grid-template-columns: 0.9fr 1.2fr 0.9fr; 
+	grid-template-rows: 1fr 1fr 1fr; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+	  "nav logo ."
+	  ". . ."
+	  ". . ."; 
 }
 
-.logo{
-    background-color:#FFFFFF;
-    padding: 20px;
+.nav { 
+	display:flex;
+	font-size:1.5rem;
+	color:black;
+	padding-left:10px;
+    font-family: 'Poppins', sans-serif;
+    justify-content:space-between;
+	grid-area: nav;
+}
+
+nav a{
+    color:#000000;
+}
+
+nav li{
+    padding-inline: 2rem;
+}
+
+nav a.current, nav a:active{
+    background-color:#F2F2F2;
+    color:#000000;
+}
+
+nav ul{
+    display:flex;
+    color: #000000;
+}
+
+nav a:hover{
+    color:#000000;
+}
+
+
+.logo {
+	background-color:#FFFFFF;
     text-align: center;
-    animation: fadeIn 8s;
+    animation: fadeIn 8s; 
+	grid-area: logo;
 }
 
-.nav {
+.banner{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.banner-text{
+	/color:white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+
 
 }
 
 .container {
-
+    padding: 5em 35em 3em 35em;
+    background-color: #FFFFFF;
 }
 
 .container-1 {
-
+    padding: 3em 4em 4em;
+    background-color: #FFFFFF;
 }
 
 .container-2 {
+
 
 }
 
@@ -87,52 +179,27 @@ table {
 
 }
 
-body {
 
-}
-
-h1{
-    font-family:;
-    font-size:3rem;
-    line-height:2;
-    text-align:center;
-    margin:0rem 2rem 2rem;
-}
-
-h2{
-    font-family:;
-    font-size:2.5rem;
-    margin:2.5rem 0 1rem;
-}
-
-h3{
-    font-family:;
-    font-size:1.4rem;
-    font-weight:400;
-    margin:1.5rem 0 1rem;
-}
-
-p{
-    font-family:;
-    line-height:1.4;
-}
-
-
-footer {
-
+.footer {
+	padding:20 20 20 20;
+	color:white;
+	background-color:black;
+	text-align:center;
 }
 
 
 @media only screen and (min-width: 25em) {
 	container {
 		background-color: white;
+		padding:20px;
 	}
-}
+
 
 @media only screen and (min-width: 38em) {
 	container {
 		background-color: white;
 	}
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -144,5 +211,34 @@ footer {
 @media only screen and (min-width: 90em) {
 	container {
 		background-color: white;
+	}
+
+	h1{
+		font-family: 'Poppins', san-serif;
+		font-size:4rem;
+		text-align:center;
+		font-weight:700;
+		line-height:2em;
+	}
+	
+	h2{
+		font-family: 'Poppins', san-serif;
+		font-size:2rem;
+		text-align:center;
+		font-weight:600;
+		line-height:2em;
+	}
+	
+	h3{
+		font-family:'Poppins', san-serif;
+		font-size:2rem;
+		font-weight:600;
+		text-align:center;
+		line-height:4em;
+	}
+	
+	p{
+		font-family:;
+		line-height:1.4;
 	}
 }
