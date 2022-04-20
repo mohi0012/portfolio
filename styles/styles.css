@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -90,7 +90,7 @@ b{
 }
 
 i{
-	font-style:italics;
+	font-style:italic;
 }
 
 .header{
@@ -113,10 +113,9 @@ i{
 .nav { 
 	background: #FFFFFF;
 	justify-self:center;
-	justify-content:space-around;
 	font-size:1rem;
 	color:grey;
-	padding-top:50px;
+	padding-top:35px;
     font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	grid-area: nav;
@@ -261,22 +260,18 @@ nav a:hover{
 /* ========== Media Queries ========== */
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
 	.container {
 		width:320px;
 		margin: 0 auto;
 		margin-bottom:20px;
 	}
 
-	.container-1 {
-
-	}
-
 	.container-2 {
 		padding-left:30px;
 		padding-right:30px;
 		margin: 0 auto;
-		margin-bottom:20px;
+		margin-bottom:10px;
 	}
 
 	.head {
@@ -317,17 +312,16 @@ nav a:hover{
 	
 	.logo {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		text-align: center;
 		width: 50%;
 	}
 
 	h1{
 		font-family: 'Poppins', san-serif;
-		font-size:1.2em;
+		font-size:1.4em;
 		text-align:center;
 		font-weight:800;
-		line-height:em;
+		line-height:2em;
 		margin-bottom:20px;
 	}
 
@@ -337,20 +331,18 @@ nav a:hover{
 		text-align:center;
 		font-weight:600;
 		line-height:40px;
-		margin-bottom:20px;
+		margin-bottom:0px;
 		padding-left:50px;
 		padding-right:50px;
 	}
 
 	h3{
 		font-family:'Poppins', san-serif;
-		font-size:15px;
+		font-size:11px;
 		font-weight:650;
 		text-align:center;
-		line-height:20px;
+		line-height:15px;
 		margin-bottom:20px;
-		padding-left:55px;
-		padding-right:55px;
 	}
 
 	p{
@@ -361,10 +353,6 @@ nav a:hover{
 
 	.banner-text{
 		color:white;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 
 	.btn {
@@ -372,8 +360,9 @@ nav a:hover{
 		border: none;
 		border-radius: 5px;
 		color: black;
-		padding: 10px 20px;
+		padding: 5px 15px;
 		text-align: center;
+		font-size:5px;
 		font-weight:800;
 		display: inline-block;
 		font-family: 'Poppins', san-serif;
@@ -404,21 +393,21 @@ nav a:hover{
 	}
 
 	.form_button:hover {
-	background: #e7e7e7;
+		background: #e7e7e7;
 	}
 
 	.footer {
-	font-size:11px;
-	color:white;
-	background-color:black;
-	text-align:center;
-	bottom: 0;
-	padding: 40px;
-	justify-content:space-between;
+		font-size:11px;
+		color:white;
+		background-color:black;
+		text-align:center;
+		bottom: 0;
+		padding: 40px;
+		justify-content:space-between;
 	}
-	}
+}
 
-@media screen and (min-width: 880px){
+@media screen and (min-width: 800px){
 	.container {
 		width: 400px;
 		padding-left:0;
@@ -428,10 +417,10 @@ nav a:hover{
 
 	h1{
 		font-family: 'Poppins', san-serif;
-		font-size:3em;
+		font-size:2.5em;
 		text-align:center;
 		font-weight:800;
-		line-height:1em;
+		line-height:1.5em;
 	}
 
 	h2{
@@ -439,7 +428,7 @@ nav a:hover{
 		font-size:2rem;
 		text-align:center;
 		font-weight:600;
-		line-height:2em;
+		line-height:1.5em;
 	}
 
 	h3{
@@ -447,7 +436,7 @@ nav a:hover{
 		font-size:1rem;
 		font-weight:650;
 		text-align:center;
-		line-height:4em;
+		line-height:3em;
 	}
 
 	p{
