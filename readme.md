@@ -1,4 +1,12 @@
-This portfolio focuses on my brand. I have been working towards building something that each and every individual can cater to when they are in need of rest and sleep. I wanted to create a website that features the very elements to the brand. From the logo to captivating photos and meaningful messages on what rest and sleep does for us, I believe that it can help reach my target audience. 
+**Tula Mohiuddin**
+**SN 040864198**
+**WEB DEV II**
+
+---
+
+## Final Portfolio - 2 AM BLUES
+
+This portfolio focuses on my start up brand. I have been working towards building something that each and every individual can cater to when they are in need of rest and sleep. I wanted to create a website that features the very elements to the brand. From the logo to captivating photos and meaningful messages on what rest and sleep does for us, I believe that it can help reach my target audience. 
 
 I've learned many things throughout this assignment process and amongst those things:
 
@@ -14,5 +22,7 @@ In the mist of it all, the challenges that I did face were:
 
 Overall, practice makes progress and that is something I wish to focus on as the days go by. Learning the very foundation of a website can be tricky but understanding the step by step process and how to create a responsive and appealing website. 
 
+---
+
 Images created by 
-Paweł Czerwiński, found on unsplash.com
+**Paweł Czerwiński**, found on [unsplash](unsplash.com)
