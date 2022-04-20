@@ -52,7 +52,7 @@ table {
 ******************************************************/
     
 body {
-	font-family:'Poppins', san-serif;
+	font-family: 'Poppins', san-serif;
 }
 
 h1{
@@ -85,14 +85,24 @@ p{
 	font-weight:300;
 }
 
+b{
+	font-weight:600;
+}
+
+i{
+	font-style:italics;
+}
+
 .header{
-	margin:auto;
+	margin:0 auto;
 }
 
 .head {
-  display: grid; 
-  grid-template-columns: 1fr 1.1fr 0.9fr; 
-  grid-template-rows: 0.6fr 1.4fr 1fr; 
+  display: grid;
+  justify-content:center;
+  padding-top:20px; 
+  grid-template-columns: 1.4fr 1fr 0.9fr; 
+  grid-template-rows: 0.6fr 0fr 0.5fr;  
   gap: 0px 0px; 
   grid-template-areas: 
     "nav Logo ."
@@ -103,9 +113,10 @@ p{
 .nav { 
 	background: #FFFFFF;
 	justify-self:center;
+	justify-content:space-around;
 	font-size:1rem;
 	color:grey;
-	padding-top:60px;
+	padding-top:50px;
     font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	grid-area: nav;
@@ -170,8 +181,10 @@ nav a:hover{
 }
 
 .container {
-    padding: 5em 35em 3em 35em;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
     background-color: #FFFFFF;
+	justify-content:center;
 }
 
 .container-1 {
@@ -182,6 +195,30 @@ nav a:hover{
 .container-2 {
 	padding: 3em 4em 4em 2em;
 	text-align:center;
+}
+
+.container-3 {
+	display: grid; 
+	text-align:center;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 0fr 1fr 0.2fr; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+	  ". . ."
+	  "box1 box2 box3"
+	  ". . ."; 
+}
+
+.box1 {
+	grid-area: box1;
+}
+
+.box2 {
+	grid-area: box2;
+}
+
+.box3 {
+	grid-area: box3;
 }
 
 .form_email {
@@ -221,38 +258,105 @@ nav a:hover{
 	justify-content:space-between;
 	}
 
-@media only screen and (max-width: 480px) {
-	container {
-		background-color: white;
+/* ========== Media Queries ========== */
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width:320px;
+		margin: 0 auto;
+		margin-bottom:20px;
+	}
+
+	.container-1 {
+
+	}
+
+	.container-2 {
+		padding-left:30px;
+		padding-right:30px;
+		margin: 0 auto;
+		margin-bottom:20px;
+	}
+
+	.head {
+		margin: 0 auto;
+		display:block;
+		justify-content:center;
+	  }
+	  
+	.nav { 
+		font-size:1rem;
+		color:grey;
+		font-family: 'Poppins', sans-serif;
+		text-decoration: none;
+	}
+	
+	nav a{
+		color:grey;
+		text-decoration: none;
+	}
+	
+	nav li{
+		padding: 1.5em;
+	}
+	
+	nav a.current, nav a:active{
+		background-color:#FFFFFF;
+		color:grey;
+	}
+	
+	nav ul{
+		color: #000000;
+		justify-content:center;
+	}
+	
+	nav a:hover{
+		color:#e7e7e7;
+	}
+	
+	.logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
 	}
 
 	h1{
-			font-family: 'Poppins', san-serif;
-			font-size:20px;
-			text-align:center;
-			font-weight:700;
-			line-height:1em;
+		font-family: 'Poppins', san-serif;
+		font-size:1.2em;
+		text-align:center;
+		font-weight:800;
+		line-height:em;
+		margin-bottom:20px;
 	}
-		
+
 	h2{
-			font-family: 'Poppins', san-serif;
-			font-size:20px;
-			text-align:center;
-			font-weight:600;
-			line-height:1.4em;
+		font-family: 'Poppins', san-serif;
+		font-size:1.7em;
+		text-align:center;
+		font-weight:600;
+		line-height:40px;
+		margin-bottom:20px;
+		padding-left:50px;
+		padding-right:50px;
 	}
-		
+
 	h3{
-			font-family:'Poppins', san-serif;
-			font-size:18px;
-			font-weight:600;
-			text-align:center;
-			line-height:4em;
+		font-family:'Poppins', san-serif;
+		font-size:15px;
+		font-weight:650;
+		text-align:center;
+		line-height:20px;
+		margin-bottom:20px;
+		padding-left:55px;
+		padding-right:55px;
 	}
-		
+
 	p{
-			font-family:'Poppins', san-serif;
-			font-size:10px;
+		font-size:12px;
+		font-family:'Poppins';
+		font-weight:300;
 	}
 
 	.banner-text{
@@ -262,20 +366,114 @@ nav a:hover{
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+
+	.btn {
+		background-color: white; 
+		border: none;
+		border-radius: 5px;
+		color: black;
+		padding: 10px 20px;
+		text-align: center;
+		font-weight:800;
+		display: inline-block;
+		font-family: 'Poppins', san-serif;
+	}
+	
+	.form_email {
+		border:1px solid grey;
+		color: black;
+		padding: 15px;
+		width:180px;
+		height: 4px;
+		border-radius: 5px;
+		font-size: 15px;
 }
 
-@media only screen and (min-width:1000px) {
-	container {
+	.form_button {
+		margin-bottom: 20px;
 		background-color: white;
+		border:1px solid grey;
+		border-radius: 5px;
+		color: black;
+		padding: 5px;
+		width:80px;
+		text-align: center;
+		font-weight:600;
+		font-size:15px;
+		font-family: 'Poppins', san-serif;
 	}
 
-	
+	.form_button:hover {
+	background: #e7e7e7;
+	}
+
+	.footer {
+	font-size:11px;
+	color:white;
+	background-color:black;
+	text-align:center;
+	bottom: 0;
+	padding: 40px;
+	justify-content:space-between;
+	}
+	}
+
+@media screen and (min-width: 880px){
+	.container {
+		width: 400px;
+		padding-left:0;
+		padding-right:0;
+		margin: 0 auto;
+	}
+
 	h1{
 		font-family: 'Poppins', san-serif;
-		font-size:4.5em;
+		font-size:3em;
+		text-align:center;
+		font-weight:800;
+		line-height:1em;
+	}
+
+	h2{
+		font-family: 'Poppins', san-serif;
+		font-size:2rem;
 		text-align:center;
 		font-weight:600;
 		line-height:2em;
+	}
+
+	h3{
+		font-family:'Poppins', san-serif;
+		font-size:1rem;
+		font-weight:650;
+		text-align:center;
+		line-height:4em;
+	}
+
+	p{
+		font-size:12px;
+		font-family:'Poppins';
+		line-height:2;
+		font-weight:300;
+	}
+}
+
+/* ========== Desktop ========== */
+
+@media screen and (min-width: 1200px){
+	.container {
+		width:600px;
+		padding:0 250px 0px 250px;
+		margin-bottom:40px;
+	}
+
+	h1{
+		font-family: 'Poppins', san-serif;
+		font-size:4em;
+		text-align:center;
+		font-weight:600;
+		line-height:1.5em;
+		margin-bottom:40px;
 	}
 
 	h2{
@@ -287,16 +485,22 @@ nav a:hover{
 	}
 
 	h3{
-		font-family:'Poppins', san-serif;
+		font-family: 'Poppins', san-serif;
 		font-size:1.5rem;
 		font-weight:650;
 		text-align:center;
-		line-height:4em;
+		line-height:2em;
+		margin-bottom:40px;
 	}
 
 	p{
-		font-family:'Poppins';
+		font-size:15px;
+		font-family: 'Poppins';
 		line-height:2;
 		font-weight:300;
+	}
+
+	.banner{
+		max-width:100%;
 	}
 }
